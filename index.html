@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Magic</title>
+    <link rel="stylesheet" href="two.css">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="content">
+        <h1 id="title">Do as you are instructed</h1>
+
+        <!-- Input for Task1 -->
+        <div id="inputBox" style="display:none;">
+            <label for="num1" style="color: aqua;">Enter two numbers with signs</label><br><br><br>
+            <label for="num1">Enter first number:</label><br>
+            <input type="number" id="num1"><br><br>
+            <label for="num2">Enter second number:</label><br>
+            <input type="number" id="num2"><br><br>
+            <button onclick="checkNumbers()">Check</button><br>
+            <div id="result"></div><br><br>
+            <button id="task2Go" onclick="changeToTask2()" style="display: none;">Next</button><br>
+        </div>
+
+
+        <!-- Input for Task2 -->
+        <div id="stringInput" style="display:none;">
+            <label for="string2" style="color: aqua;">Enter a string and watch it getting REVERSED</label><br><br><br>
+            <input id="string2"><br><br>
+            <button onclick="reverseThis()">REVERSE</button><br>
+            <div id="result2"></div><br><br>
+            <button id="task3Go" onclick="changeToTask3()" style="display: none;">Next</button><br>
+        </div>
+
+
+        <!-- Input for Task3 -->
+        <div id="arrayInput" style="display:none;">
+            <label for="array" style="color: aqua;">Enter the array of integers (comma-separated):</label><br><br><br>
+            <input id="array" placeholder="e.g. 1,2,3,4,5"><br><br>
+            <button onclick="removeOddIntegers()">Remove Odd Integers</button>
+            <div id="result3"></div><br><br>
+            <button id="task4Go" onclick="changeToTask4()" style="display: none;">Next</button><br>
+        </div>
+
+
+        <!-- Input for Task4 -->
+        <div id="arrayInput4" style="display:none;">
+            <h1 id="title" style="font-weight: bold; color: rgb(43, 130, 130);">You will input an array given with
+                measurements of
+                single side of squares, and you will find the areas of the squares</h1>
+
+            <label for="array4" style="color: aqua;">Enter the array of integers (comma-separated):</label><br><br><br>
+            <input id="array4" placeholder="e.g. 1,2,3,4,5"><br><br>
+            <button onclick="findAreas()">Find Areas</button>
+            <div id="result4"></div><br><br>
+            <button id="task5Go" onclick="changeToTask5()" style="display: none;">Next</button><br>
+        </div>
+
+
+        <!-- Input for Task5 -->
+        <div id="tryCatch" style="display:none;">
+            <label style="color: aqua;">Enter two numbers for Division</label><br><br><br>
+            <label for="numerator">Enter Numerator:</label><br>
+            <input type="number" id="numerator"><br><br>
+            <label for="denominator">Enter Denominator:</label><br>
+            <input type="number" id="denominator"><br><br>
+            <button onclick="showResult()">Show Result</button><br>
+            <div id="result5"></div><br><br>
+        </div>
+
+    </div>
+    <script src="three.js"></script>
+</body>
+
+</html>

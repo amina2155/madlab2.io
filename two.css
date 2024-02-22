@@ -1,0 +1,106 @@
+body {
+    margin: 100px;
+    padding: 0;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+#title {
+    font-size: 50px;
+}
+
+#inputBox {
+    margin-top: 20px;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 40px;
+}
+
+#string2,
+#array,
+#array4 {
+    width: 50%;
+    font-size: 25px;
+}
+
+button {
+    padding: 20px 30px;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    align-items: center;
+}
+
+#task2Go,
+#task3Go,
+#task4Go,
+#task5Go {
+    margin-left: calc(100% - 120px);
+    padding: 2px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid 1px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 25px;
+    align-items: center;
+}
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(58, 131, 131);
+}
+
+#task2Go:hover {
+    color: aqua;
+}
+
+#task3Go:hover {
+    color: aqua;
+}
+
+#task4Go:hover {
+    color: aqua;
+}
+
+#task5Go:hover {
+    color: aqua;
+}
+
+#result,
+#result2,
+#result3,
+#result4,
+#result5 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 35px;
+}
